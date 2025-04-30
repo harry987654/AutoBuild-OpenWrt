@@ -10,6 +10,12 @@ on:
   schedule:
    - cron: 0 17 * * 5
 
+      SSH_ACTION:
+        description: 'SSH远程配置固件'
+        required: false
+        default: 'false'
+        type: boolean
+
 env:
   Github: https://github.com/${{github.repository}}
   Author: ${{github.actor}}
