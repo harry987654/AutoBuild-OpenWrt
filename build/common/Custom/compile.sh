@@ -250,7 +250,7 @@ fi
 }
 echo
 echo
-[[ -z ${ipdz} ]] && ipdz="192.168.1.1"
+[[ -z ${ipdz} ]] && ipdz="192.168.8.1"
 TIME g "设置openwrt的后台IP地址[ 回车默认 $ipdz ]"
 read -p " 请输入后台IP地址：" ip
 ip=${ip:-"$ipdz"}
