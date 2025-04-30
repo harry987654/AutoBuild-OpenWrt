@@ -145,6 +145,10 @@ jobs:
           source "${PATH1}/upgrade.sh" && Diy_Part1
         fi
 
+    - name: SSH远程连接（make menuconfig）
+      if: env.SSH_ACTION == 'true'
+      uses: danshui-git/debugger-action@main
+      
     - name: 生成配置
       run: |
         cd openwrt
