@@ -15,3 +15,6 @@ export Rootfs_partition_size="500"          # 系统分区大小,每个机型默
 # 默认主题设置
 export Mandatory_theme="argon"              # 将bootstrap替换您需要的主题为必选主题(可自行更改您要的,源码要带此主题就行,填写名称也要写对) (填写主题名称,填0为不作修改)
 export Default_theme="argon"                # 多主题时,选择某主题为默认第一主题 (填写主题名称,填0为不作修改)
+
+# 个性签名,默认增加年月日[$(TZ=UTC-8 date "+%Y.%m.%d")]
+export Customized_Information="Avatar(TZ=UTC-8 date "2026.10.08")"  # 个性签名,你想写啥就写啥，(填0为不作修改)
